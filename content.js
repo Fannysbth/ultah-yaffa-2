@@ -101,21 +101,21 @@ window.STORY_CONTENT = {
   opening: "Dear Yaffa,",
 
   paragraphs: [
-    "Happy birthday, Yaffa! Welcome to your 22nd chapter of life. Rasanya agak aneh juga melihat kita semakin dewasa, padahal kadang kelakuan masih seperti orang yang belum selesai tutorial hidupnya. Semoga di umur yang baru ini, kamu semakin banyak menemukan alasan untuk bahagia, semakin menikmati hidup, dan semakin mengenal dirimu sendiri.",
+    "Happy birthday, Yaffa! Welcome to your 22nd chapter of life. Yeay udah makin tua ye. Semoga di umur yang baru ini, kw semakin banyak menemukan alasan untuk bahagia, semakin menikmati hidup, dan semakin mengenal dirimu sendiri.",
 
-    "Semoga di umur yang baru ini kamu semakin dekat dengan Tuhan, semakin bertumbuh dalam iman, dan selalu menemukan ketenangan dalam setiap doa yang kamu panjatkan. Semoga Tuhan senantiasa membimbing setiap langkahmu, memberikan hikmat dalam setiap keputusan, menguatkanmu ketika menghadapi masa-masa sulit, dan memberkati segala rencana serta impian yang sedang kamu perjuangkan. Semoga kamu selalu dipenuhi rasa syukur, sukacita, dan damai sejahtera, semakin menjadi pribadi yang baik, semakin mengasihi orang-orang di sekitarmu, dan tidak pernah lupa bahwa dalam setiap musim kehidupan, Tuhan selalu punya rencana yang indah untukmu.",
+    "Semoga diumurmu yang baru ini juga kw bisa lebih dekat dengan Tuhan, rajin ibadah, rajin doa, ga hilang pengharapan, dan tetap yakin Tuhan mendengar semua celutukanmu yang ga sengaja itu dan mewujudkannya suatu hari nanti.",
 
-    "Aku berharap semoga kamu selalu diberikan kesehatan, kebahagiaan, ketenangan, dan banyak hal baik dalam setiap langkahmu. Semoga segala sesuatu yang sedang kamu usahakan perlahan menemukan jalannya, segala doa yang kamu simpan diam-diam satu per satu terwujud, dan kamu selalu dikelilingi orang-orang yang tulus menyayangimu. Jangan lupa untuk selalu sayang sama orang tua, membahagiakan mereka, dan semoga kamu selalu punya banyak kesempatan untuk membuat mereka bangga.",
+    "Aku berharap semoga kw selalu diberikan kesehatan, kebahagiaan, ketenangan, dan banyak hal baik dalam setiap langkahmu. Semoga segala sesuatu yang sedang kw usahakan perlahan menemukan jalannya, dan kw selalu dikelilingi orang-orang yang tulus menyayangimu kek aku. Jangan lupa untuk selalu sayang sama orang tua.",
 
-    "Semoga kamu segera mendapatkan pekerjaan di tempat yang benar-benar kamu inginkan, dengan lingkungan yang baik, orang-orang yang menyenangkan, kesempatan berkembang, dan tentunya segala hal yang pantas kamu dapatkan. Semoga perjalanan menuju masa depan yang kamu impikan terasa lebih ringan, penuh kesempatan, dan tidak membuatmu kehilangan kesenangan dalam menjalani hidup. Pelan-pelan saja, tidak perlu buru-buru membandingkan perjalananmu dengan orang lain.",
+    "Semoga kw segera mendapatkan pekerjaan di tempat yang benar-benar kw inginkan, dan kalau belum dapat pun gpp tetap semangat di tempat kerja yang sekarang, lebih sabar lagi menhadapi kejanggalan ketidaksinkronan yang ada di sana. Dan moga kafe mu jadi ya, biar jadi basecamp kita nantinya",
 
-    "Dan tentu saja, semoga segera dipertemukan dengan seseorang yang baik, tulus, sabar, dan benar-benar tahu cara memperlakukan kamu dengan baik. Yang demen sama kamu melebihi T, yang effort-nya tidak perlu diminta, yang bisa diajak cerita tentang hal random sampai hal serius, dan yang tidak membuatmu mempertanyakan apakah kamu layak disayang. Semoga nanti kalau sudah waktunya, kamu mendapatkan love story yang menyenangkan dan tidak kalah seru dari cerita-cerita yang biasa kita bahas.",
+    "Oh ya ni wish yang udah bertahun-tahun, moga kw bisa segera ketemu manusia yang tipemu cocok denganmu disemua ketidakseangajan duniawi ini secara organic, biar wish ini berganti di tahun depan jadi semoga langgeng, dan juga bisa aku juga bisa macarin teman pacarmu itu.",
 
-    "Satu hal lagi yang paling aku harapkan: semoga kita masih punya banyak kesempatan untuk ketemu, main bareng, jalan-jalan, ngobrol random, dan membuat kenangan baru. Semoga jarak, kesibukan, dan segala urusan masing-masing tidak membuat kita kehilangan kesempatan untuk kembali menghabiskan waktu bersama. I really hope we get to meet and hang out again soon.",
+    "Terus moga kita bisa ketemu lagi, aku bisa nyusul kw dimanapun kw nantinya atau sebaliknya intinya moga kita kerja di kota yang sama, plis doain aku juga yaw.",
 
-    "Jalani 22 tahun ini dengan lebih banyak tertawa, lebih banyak mencoba hal baru, lebih banyak pengalaman seru, dan lebih banyak hari yang membuatmu merasa bahwa hidup ternyata menyenangkan. Semoga ada banyak kejutan baik, kesempatan yang tidak disangka-sangka, tempat baru untuk dikunjungi, makanan enak untuk dicoba, dan cerita-cerita baru yang suatu hari bisa kita kenang sambil tertawa lagi.",
+    "Pesanku yang udah mau melepas umur 22 ini adalah lebih banyak tertawa lebih banyak bersyukur lebih banyak ngerjain segalanya itu dengan sepenuh hati, aku dapat banyak keajaiban di umur 22 ini semoga kw juga ya",
 
-    "Happy 22nd birthday once again, Yaffa. Semoga semua yang baik menemukan jalannya menuju kamu, semoga hal-hal yang kamu tunggu segera datang, dan semoga kamu selalu punya alasan untuk tersenyum. Here's to another year of growing, learning, laughing, and living your life to the fullest. You deserve so many good things."
+    "Happy 22nd birthday once again, Yaffa. Semoga semua yang baik menemukan jalannya menuju kw, semoga hal-hal yang kw tunggu segera datang, dan semoga kw selalu punya alasan untuk tersenyum. Here's to another year of growing, learning, laughing, and living your life to the fullest. You deserve so many good things."
   ],
 
   closing: "With love,\nFanny",
