@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#292a31">
+  <meta name="description" content="An unfinished story from the personal archive of Yaffa.">
+  <title>SAVE FILE_06 — The Last Page Doesn't Exist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="content.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the story</a>
+  <main id="main">
+    <section class="screen terminal" id="intro" aria-labelledby="intro-title">
+      <div class="terminal-frame">
+        <p class="eyebrow">PERSONAL ARCHIVE / RECOVERY CONSOLE</p>
+        <h1 id="intro-title" class="terminal-title">AN UNFINISHED STORY<br>HAS BEEN FOUND.</h1>
+        <div class="terminal-lines" aria-live="polite">
+          <p>FILE ID: <span>09-11</span></p><p>SUBJECT: <span>YAFFA</span></p>
+          <p>STATUS: <span class="status-incomplete">INCOMPLETE</span></p>
+          <p>CLASSIFICATION: <span>PERSONAL ARCHIVE</span></p>
+          <p class="terminal-note">Warning: this file contains memories, questionable decisions, and one very special human being.</p>
+        </div>
+        <button class="button button-light" id="open-file">OPEN THE FILE <span aria-hidden="true">↗</span></button>
+        <p class="microcopy">No account required. Take your time.</p>
+      </div>
+      <span class="corner-mark">SF—06 / 001</span>
+    </section>
+
+    <div id="story" hidden>
+      <header class="topbar">
+        <a class="wordmark" href="#profile" aria-label="Save File 06 home">SAVE FILE<span>_06</span></a>
+        <div class="progress-wrap" aria-label="Story progress"><span id="progress-label">0 / 4 recovered</span><span class="progress-track"><span id="progress-fill"></span></span></div>
+        <button class="text-button" id="reset-progress" type="button">RESET</button>
+      </header>
+
+      <section class="chapter profile chapter-pad" id="profile" aria-labelledby="profile-title">
+        <div class="chapter-index">CHAPTER 01 <span>— SUBJECT PROFILE</span></div>
+        <div class="profile-layout">
+          <div class="profile-heading"><p class="eyebrow ink">PERSONNEL RECORD / 06—XXXX</p><h2 id="profile-title">Meet the<br><em>protagonist.</em></h2><p class="profile-intro">The archive has a few notes. Some fields are still waiting for their real answers.</p></div>
+          <div class="dossier" aria-label="Character dossier">
+            <div class="dossier-stamp">ONE<br>OF A<br>KIND</div>
+            <p class="dossier-row"><span>CHARACTER</span><strong id="character-name"></strong></p>
+            <button class="dossier-row attribute" data-profile="role" type="button"><span>ROLE <b aria-hidden="true">＋</b></span><strong></strong></button>
+            <button class="dossier-row attribute" data-profile="class" type="button"><span>CLASS <b aria-hidden="true">＋</b></span><strong></strong></button>
+            <button class="dossier-row attribute" data-profile="ability" type="button"><span>SPECIAL ABILITY <b aria-hidden="true">＋</b></span><strong></strong></button>
+            <button class="dossier-row attribute" data-profile="weakness" type="button"><span>KNOWN WEAKNESS <b aria-hidden="true">＋</b></span><strong></strong></button>
+            <p class="profile-note" id="profile-note" aria-live="polite">Select a field for its archived annotation.</p>
+            <p class="dossier-status">STATUS: <strong>ONE OF A KIND</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-section chapter-pad" id="map" aria-labelledby="map-title">
+        <div class="chapter-index">CHAPTER 02 <span>— THE MEMORY WORLD</span></div>
+        <div class="map-heading"><h2 id="map-title">Three rooms.<br><em>Take any door.</em></h2><p>Some pieces of this story are missing. See what the archive kept.</p></div>
+        <nav class="room-list" aria-label="Memory archive rooms">
+          <button class="room-link" data-room="gallery" type="button"><span class="room-letter">A</span><span><strong>THE MEMORY GALLERY</strong><small>Photographs &amp; things left in the light</small></span><span class="room-state" id="room-state-gallery">ENTER ↗</span></button>
+          <button class="room-link" data-room="signals" type="button"><span class="room-letter">B</span><span><strong>THE SIGNAL ARCHIVE</strong><small>Records of a connection</small></span><span class="room-state" id="room-state-signals">ENTER ↗</span></button>
+          <button class="room-link" data-room="messages" type="button"><span class="room-letter">C</span><span><strong>THE MESSAGE VAULT</strong><small>Fragments recovered from a conversation</small></span><span class="room-state" id="room-state-messages">ENTER ↗</span></button>
+        </nav>
+        <p class="fragment-count"><span id="fragment-count">0</span> / 3 MEMORY FRAGMENTS RECOVERED</p>
+      </section>
+
+      <section class="room-panel chapter-pad" id="room-panel" hidden aria-live="polite">
+        <div class="room-panel-head"><div><p class="chapter-index" id="room-kicker"></p><h2 id="room-title"></h2></div><button class="text-button close-room" id="close-room" type="button">← ARCHIVE MAP</button></div>
+        <div id="room-content"></div>
+      </section>
+
+      <section class="quest chapter-pad" id="quest" aria-labelledby="quest-title">
+        <div class="chapter-index">CHAPTER 03 <span>— OPTIONAL EXPERTISE CHECK</span></div>
+        <div class="quest-layout"><div><p class="eyebrow ink">THREE QUESTIONS / ZERO CONSEQUENCES</p><h2 id="quest-title">One last thing<br><em>to unlock.</em></h2><p class="quest-copy">A tiny quiz for the person who knows the subject best. The creator still needs to fill in the real answers first.</p></div><div class="quiz-box" id="quiz-box"></div></div>
+      </section>
+
+      <section class="ending-gate chapter-pad" id="ending-gate" aria-labelledby="gate-title">
+        <div class="chapter-index">CHAPTER 04 <span>— ACCESS CONTROL</span></div>
+        <div class="gate-content"><p class="eyebrow">FILE STATUS: <span id="gate-status">LOCKED</span></p><h2 id="gate-title">The missing<br><em>page.</em></h2><p id="gate-copy">Recover three memory fragments and finish the little quest to continue.</p><button class="button" id="open-ending" type="button" disabled>CONTINUE TO THE LAST PAGE</button></div>
+      </section>
+
+      <section class="quiet-page" id="quiet-page" hidden aria-labelledby="quiet-title" tabindex="-1">
+        <p class="chapter-index">CHAPTER 05 / RECOVERY COMPLETE</p><h2 id="quiet-title">So, you found<br>everything.</h2><p>Except…</p><p>There's still one thing I haven't told you.</p><button class="page-continue" id="reveal-letter" type="button">TURN THE PAGE <span aria-hidden="true">↓</span></button>
+      </section>
+
+      <section class="letter-section" id="letter" hidden aria-labelledby="letter-title">
+        <div class="letter-meta"><span>PERSONAL CORRESPONDENCE</span><span>FOR YAFFA / ALWAYS IN PROGRESS</span></div>
+        <article class="letter-paper"><p class="eyebrow ink">A NOTE FROM <span id="letter-from"></span></p><h2 id="letter-title">This was<br>made for you.</h2><div id="letter-body" class="letter-body"></div><p class="letter-signoff" id="letter-signoff"></p><p class="letter-postscript" id="letter-postscript"></p></article>
+        <div class="letter-actions"><p>THE END IS A PLACE WE HAVEN'T REACHED.</p><button class="button" id="replay" type="button">↺ REPLAY THE STORY</button></div>
+      </section>
+      <footer class="site-footer"><span>SAVE FILE_06</span><span>THE LAST PAGE DOESN'T EXIST</span></footer>
+    </div>
+  </main>
+
+  <dialog id="viewer" class="viewer" aria-label="Archive item viewer"><div class="viewer-head"><p class="eyebrow" id="viewer-label"></p><button class="icon-button" id="viewer-close" type="button" aria-label="Close viewer">×</button></div><div id="viewer-content" class="viewer-content"></div><div class="viewer-foot"><span id="viewer-caption"></span><button class="text-button" id="collect-fragment" type="button" hidden>RECOVER FRAGMENT +</button></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
