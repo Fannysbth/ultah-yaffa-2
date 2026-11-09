@@ -158,6 +158,9 @@
     room.items.forEach((item, index) => grid.append(makeArchiveCard(item, index, roomId)));
     target.append(grid);
     panel.hidden = false;
+    panel.classList.remove("is-entering");
+    void panel.offsetWidth;
+    panel.classList.add("is-entering");
     panel.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
     renderProgress();
   }
@@ -198,11 +201,14 @@
   function renderQuiz() {
     const box = $("#quiz-box");
     box.replaceChildren();
+    const step = document.createElement("div");
+    step.className = "quiz-step";
     if (state.quizCompleted) {
       const result = document.createElement("p");
       result.className = "quiz-complete";
       result.textContent = "QUEST COMPLETE — FINAL PAGE KEY RECOVERED ✓";
-      box.append(result);
+      step.append(result);
+      box.append(step);
       return;
     }
     const question = content.quiz[currentQuizQuestion];
@@ -240,11 +246,12 @@
           }
           renderQuiz();
         });
-        box.append(next);
+        step.append(next);
       });
       answers.append(button);
     });
-    box.append(counter, prompt, answers, feedback);
+    step.append(counter, prompt, answers, feedback);
+    box.append(step);
   }
 
   function renderLetter() {
@@ -267,7 +274,12 @@
     state.opened = true;
     saveState();
     $("#intro").hidden = true;
-    $("#story").hidden = false;
+    const story = $("#story");
+    story.hidden = false;
+    story.classList.remove("is-opening");
+    void story.offsetWidth;
+    story.classList.add("is-opening");
+    $(".topbar", story).addEventListener("animationend", () => story.classList.remove("is-opening"), { once: true });
     renderProgress();
     document.querySelector("#profile").scrollIntoView({ block: "start" });
   });

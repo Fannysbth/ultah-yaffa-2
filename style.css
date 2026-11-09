@@ -359,6 +359,73 @@ h2 em { font-weight: 400; color: var(--blue-dark); }
   animation: viewer-arrive .22s ease-out both;
 }
 
+#story.is-opening .topbar {
+  animation: topbar-arrive .55s cubic-bezier(.2, .75, .25, 1) both;
+}
+
+.terminal-lines p {
+  animation: terminal-line-in .45s ease both;
+}
+
+.terminal-lines p:nth-child(2) { animation-delay: .08s; }
+.terminal-lines p:nth-child(3) { animation-delay: .16s; }
+.terminal-lines p:nth-child(4) { animation-delay: .24s; }
+.terminal-lines p:nth-child(5) { animation-delay: .32s; }
+
+.room-panel.is-entering {
+  animation: panel-arrive .45s cubic-bezier(.2, .75, .25, 1) both;
+}
+
+.room-panel.is-entering .room-description {
+  animation: terminal-line-in .35s ease both;
+}
+
+.room-panel.is-entering .archive-item {
+  animation: archive-card-arrive .45s cubic-bezier(.2, .75, .25, 1) backwards;
+}
+
+.room-panel.is-entering .archive-item:nth-child(2) { animation-delay: .04s; }
+.room-panel.is-entering .archive-item:nth-child(3) { animation-delay: .08s; }
+.room-panel.is-entering .archive-item:nth-child(4) { animation-delay: .12s; }
+.room-panel.is-entering .archive-item:nth-child(5) { animation-delay: .16s; }
+.room-panel.is-entering .archive-item:nth-child(6) { animation-delay: .20s; }
+.room-panel.is-entering .archive-item:nth-child(7) { animation-delay: .24s; }
+.room-panel.is-entering .archive-item:nth-child(8) { animation-delay: .28s; }
+.room-panel.is-entering .archive-item:nth-child(9) { animation-delay: .32s; }
+.room-panel.is-entering .archive-item:nth-child(10) { animation-delay: .36s; }
+
+.quiz-step {
+  animation: step-arrive .35s cubic-bezier(.2, .75, .25, 1) both;
+}
+
+.quiz-next {
+  animation: terminal-line-in .3s ease both;
+}
+
+.quiet-page.is-visible h2,
+.quiet-page.is-visible > p:not(.chapter-index),
+.quiet-page.is-visible .page-continue {
+  animation: terminal-line-in .5s ease both;
+}
+
+.quiet-page.is-visible > p:nth-of-type(2) { animation-delay: .1s; }
+.quiet-page.is-visible > p:nth-of-type(3) { animation-delay: .2s; }
+.quiet-page.is-visible .page-continue { animation-delay: .3s; }
+
+.letter-paper {
+  animation: paper-arrive .65s cubic-bezier(.2, .75, .25, 1) both;
+}
+
+.letter-body > p {
+  animation: terminal-line-in .55s ease both;
+}
+
+.letter-body > p:nth-child(2) { animation-delay: .08s; }
+.letter-body > p:nth-child(3) { animation-delay: .16s; }
+.letter-body > p:nth-child(4) { animation-delay: .24s; }
+.letter-body > p:nth-child(5) { animation-delay: .32s; }
+.letter-body > p:nth-child(6) { animation-delay: .4s; }
+
 .reveal-on-scroll {
   opacity: 0;
   transform: translateY(18px);
@@ -391,6 +458,36 @@ h2 em { font-weight: 400; color: var(--blue-dark); }
 @keyframes viewer-arrive {
   from { opacity: 0; transform: translateY(10px) scale(.99); }
   to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes topbar-arrive {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes terminal-line-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes panel-arrive {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes archive-card-arrive {
+  from { opacity: 0; transform: translateY(14px) scale(.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes step-arrive {
+  from { opacity: 0; transform: translateX(12px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes paper-arrive {
+  from { opacity: 0; transform: translateY(18px) rotate(-.35deg); }
+  to { opacity: 1; transform: translateY(0) rotate(-.35deg); }
 }
 
 @media (prefers-reduced-motion: reduce) {
